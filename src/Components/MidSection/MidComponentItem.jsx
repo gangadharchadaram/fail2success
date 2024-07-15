@@ -3,8 +3,9 @@ import { room } from "../../DataForPage/dummyData";
 import { motion } from "framer-motion";
 import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
 
-const MidComponentItem = ({ title, img, text, reverse }) => {
+const MidComponentItem = ({ title, img, text1, text2, text3, text4, text5, text6, text7, reverse }) => {
   const { theme } = useContext(ThemeBgContext);
+  
   return (
     <div id="company">
       {reverse ? (
@@ -36,7 +37,61 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
                   : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
               }
             >
-              {text}
+              {text1}
+            </p>
+            <p
+              className={
+                theme === "light"
+                  ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+            >
+              {text2}
+            </p>
+            <p
+              className={
+                theme === "light"
+                  ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+            >
+              {text3}
+            </p>
+            <p
+              className={
+                theme === "light"
+                  ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+            >
+              {text4}
+            </p>
+            <p
+              className={
+                theme === "light"
+                  ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+            >
+              {text5}
+            </p>
+            <p
+              className={
+                theme === "light"
+                  ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+            >
+              {text6}
+            </p>
+            <p
+              className={
+                theme === "light"
+                  ? "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-xl text-2xl w-full pb-4 font-normal font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+            >
+              {text7}
             </p>
             <button className="pushable mt-4">
               <span className="front">Start now</span>
@@ -80,13 +135,13 @@ const MidComponentItem = ({ title, img, text, reverse }) => {
               {room.map((item) => {
                 return (
                   <div className="flex items-center py-2" key={item.id}>
-                    <div className="mr-4">
+                    {/* <div className="mr-4">
                       <img
                         className="w-16 h-16"
                         src={item.img}
                         alt="blueSofa"
                       ></img>
-                    </div>
+                    </div> */}
                     <p
                       className={
                         theme === "light"

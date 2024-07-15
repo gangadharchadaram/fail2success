@@ -12,6 +12,7 @@ import Footer from "../Footer/Footer";
 import PopUpButton from "../PopUpButton/PopUpButton";
 import { ThemeBgContext } from "../ContextWrapper/ThemeContext";
 import MobileNav from "../Navbar/MobileNav";
+import Works from "../MidSection/Works";
 
 const Home = () => {
   const sectionTop = useRef();
@@ -25,7 +26,7 @@ const Home = () => {
       <div>
         <PopUpButton handleScroll={handleScroll}></PopUpButton>
       </div>
-      <div className={theme === "light" ? "bg-white" : "bg-dark"}>
+      <div className={theme === "bg-white"}>
         <WrapperContainer navHead>
           <Navbar></Navbar>
           <Header topRef={sectionTop}></Header>
@@ -34,10 +35,11 @@ const Home = () => {
       <div className="bg-gray-100 w-full">
         <WrapperContainer>
           <MidFilterSection></MidFilterSection>
-          <MidComponentParent></MidComponentParent>
           <TabsComponent></TabsComponent>
-          <FurnitureFlow></FurnitureFlow>
           <Cards></Cards>
+          <MidComponentParent></MidComponentParent>
+          <Works></Works>
+          <FurnitureFlow></FurnitureFlow>
           <NewsLetter></NewsLetter>
         </WrapperContainer>
         <div>
