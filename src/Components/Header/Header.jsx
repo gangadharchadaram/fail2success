@@ -38,7 +38,7 @@ const Header = ({ topRef }) => {
                   : "sm:text-lg w-4/5 font-inter font-medium no-underline align-middle tracking-wide normal-case text-dark text-2xl"
               }
             >
-            I will Transform your business Ideas into Stunning websites and promote your business website in order to bring in more visitors.
+            Welcome to <span style={{fontWeight: '900'}}>FAIL2SUCCESS</span> Software Solutions! Based in Vizag, We are a dynamic team of dedicated professionals specializing in website development and digital marketing services. Our Mission is to help business of all sizes establish a strong online presence and achieve their digital goals.
               </p>
           </div>
           <div className="pb-20">

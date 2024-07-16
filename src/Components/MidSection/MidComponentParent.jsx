@@ -41,7 +41,7 @@ const MidComponentParent = () => {
         <ArrowBackIos />
       </IconButton>
       <Box flexGrow={1} mx={2}>
-        <MidComponentItem
+        <MidComponentItem 
           title={items[currentIndex].title}
           text1={items[currentIndex].text1}
           text2={items[currentIndex].text2}

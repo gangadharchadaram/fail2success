@@ -58,7 +58,7 @@ const TabsComponent = () => {
       const width = window.innerWidth;
 
       if (width <= 600) {
-        setPaddingLeft('50px');
+        setPaddingLeft('10px');
       } else if (width <= 1024) {
         setPaddingLeft('100px');
       } else {
@@ -78,6 +78,20 @@ const TabsComponent = () => {
 
   return (
     <div id="Features" style={{ marginBottom: "90px" }}>
+       <h1
+              className={
+                theme === "light"
+                  ? "sm:text-4xl text-6xl  pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
+                  : "sm:text-4xl text-6xl pt-10 pb-4 text-center font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
+              }
+              style={{textShadow: '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 4px 4px 0 #000', // Add multiple shadows for a 3D effect
+                transform: 'rotateX(10deg) rotateY(-1deg)', // Slight 3D rotation
+                color: '#0164a5',
+                letterSpacing: '0.1em', // Add letter spacing
+                fontFamily: '"Lucida Console", "Courier New'}}
+            >
+              FEATURES
+            </h1>
       <Tabs
         id="custom-animation"
         value="bedroom"
@@ -85,15 +99,7 @@ const TabsComponent = () => {
       >
         <div className="sm:w-full sm:pl-4 w-4/5 pl-24">
           <Content>
-            <h1
-              className={
-                theme === "light"
-                  ? "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-dark"
-                  : "sm:text-4xl text-6xl pt-10 pb-4 font-bold font-inter no-underline align-middle tracking-wide normal-case leading-none text-white"
-              }
-            >
-              Features
-            </h1>
+           
             <p
               className={
                 theme === "light"
@@ -151,7 +157,7 @@ const TabsComponent = () => {
             ))}
             {tabsData.map(({ value, text }) => (
               <AnimatedTabPanel key={value} value={value}>
-                <p style={{ textAlign: 'center', color: "white" }}>{text}</p>
+                <p style={{ textAlign: 'center', color: "white", fontSize: '18px' }}>{text}</p>
               </AnimatedTabPanel>
             ))}
           </TabsBody>

@@ -7,6 +7,7 @@ const MobileNav = () => {
   const [open, setOpen] = useState(false);
   const { theme } = useContext(ThemeBgContext);
 
+
   const handleClick = () => {
     setOpen(!open);
   };
@@ -14,8 +15,11 @@ const MobileNav = () => {
   return (
     <div>
       <div>
+        
+        
         <div className="hidden absolute top-2 right-4 sm:block z-40">
           {open ? (
+            
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,10 +43,11 @@ const MobileNav = () => {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke={theme === "light" ? "#3d3f3e" : "#fff"}
+              stroke={theme === "light" ? "#3d3f3e" : "#3d3f3e"}
               className="w-6 h-6"
               onClick={handleClick}
             >
+              
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -50,6 +55,7 @@ const MobileNav = () => {
               />
             </svg>
           )}
+          
         </div>
       </div>
       {open &&

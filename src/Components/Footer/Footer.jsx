@@ -1,10 +1,8 @@
 import React from "react";
 import { FooterData1 } from "../../DataForPage/dummyData";
-import { FooterData2 } from "../../DataForPage/dummyData";
-import { FooterData3 } from "../../DataForPage/dummyData";
+
 import logo from "../../assets/images/logo.png";
-import googlePlay from "../../assets/images/google-play.svg";
-import appleStore from "../../assets/images/apple-store.svg";
+
 
 import { Container, Box, TextField, Button, Typography, Grid } from '@mui/material';
 

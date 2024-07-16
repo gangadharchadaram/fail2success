@@ -17,11 +17,15 @@ const FurnitureFlow = () => {
   return (
     <div id="Why Choose us">
       <div className="text-center">
-        <h2
+        <h2 style={{ textShadow: '1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 4px 4px 0 #000', // Add multiple shadows for a 3D effect
+          transform: 'rotateX(10deg) rotateY(-1deg)', // Slight 3D rotation
+          color: '#0164a5',
+          letterSpacing: '0.1em', // Add letter spacing
+          fontFamily: '"Lucida Console", "Courier New',}}
           className={
             theme === "light"
               ? "sm:text-5xl text-dark text-center text-5xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none cursor-pointer"
-              : "sm:text-5xl text-white text-center text-5xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none cursor-pointer"
+              : "sm:text-4xl text-white text-center text-5xl font-bold pt-20 no-underline font-inter align-middle tracking-wide normal-case leading-none cursor-pointer"
           }
         >
           Why Choose us?

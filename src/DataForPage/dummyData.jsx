@@ -5,7 +5,7 @@ import web from "../assets/images/webpage.png";
 import seo from "../assets/images/seopage.png"
 import ppc from "../assets/images/ppcpage.png"
 import socialmedia from "../assets/images/Socialmediapage.png"
-import blueSofa from "../assets/images/blueSofa.png";
+
 
 export const navbarData = [
   {
@@ -133,10 +133,9 @@ export const tabsData = [
     id: "1",
     label: "Web Development",
     value: "bedroom",
-    desc: `Bujji is your best firend for Website development & Digital marketing, Social media marketing, PPC & Influencer marketing.`,
+    desc: `Bujji is your best firend for Website development & Digital marketing, Social media marketing, PPC & Influencer marketing. Bujji makes your wonderful ideas into creative websites and take responsibilty to reach for more visitors`,
     text: "Search Engine Optimization, is the practice of enhancing a website to improve its visibility on search engines like Google, Bing, and Yahoo. The goal is to increase organic (non-paid) traffic to the website by making it more likely to appear higher in search engine results pages (SERPs) for relevant queries",
     img: web,
-    linkText: "See more",
   },
 
 
@@ -147,7 +146,6 @@ export const tabsData = [
     desc: `Bujji is your best firend for Website development & Digital marketing, Social media marketing, PPC & Influencer marketing.`,
     text: "Search Engine Optimization, is the practice of enhancing a website to improve its visibility on search engines like Google, Bing, and Yahoo. The goal is to increase organic (non-paid) traffic to the website by making it more likely to appear higher in search engine results pages (SERPs) for relevant queries",
     img: seo,
-    linkText: "See more",
   },
 
   {
@@ -157,7 +155,6 @@ export const tabsData = [
     desc: `Bujji is your best firend for Website development & Digital marketing, Social media marketing, PPC & Influencer marketing.`,
     text: "Pay-per-click (PPC) is an online advertising model in which advertisers pay a fee each time one of their ads is clicked. Essentially, it’s a way of buying visits to your site, rather than attempting to “earn” those visits organically. PPC is commonly associated with search engine advertising, such as Google Ads, but it can also be used on social media platforms and other websites",
     img: ppc,
-    linkText: "See more",
   },
 
   {
@@ -167,7 +164,6 @@ export const tabsData = [
     value: "kidsroom",
     desc: `Bujji is your best firend for Website development & Digital marketing, Social media marketing, PPC & Influencer marketing.`,
     img: socialmedia,
-    linkText: "See more",
   },
 ];
 export const cardData = [
@@ -197,11 +193,11 @@ export const room = [
   {
     id: "2",
     name: "2)Free Domain Hosting, 6+ Pages Dynamic website, 1 years free web & hosting service, SSL Certificate  ",
-    img: blueSofa,
+   
   },
   {
     id: "3",
     name: "3)6 Pages Static website, 1 years free web & hosting service, SSL Certificate ",
-    img: blueSofa,
+
   },
 ];
